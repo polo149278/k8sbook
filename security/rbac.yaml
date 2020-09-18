@@ -27,4 +27,4 @@ subjects:
   - kind: Group
     name: rbac-test-group # 許可するGroupを指定する
     apiGroup: rbac.authorization.k8s.io
-
+#test

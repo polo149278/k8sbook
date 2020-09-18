@@ -1,34 +1,34 @@
-# 『Kubernetes on AWS～アプリケーションエンジニア　本番環境へ備える』コンテンツ配布用リポジトリ
-『Kubernetes on AWS～アプリケーションエンジニア　本番環境へ備える』（リックテレコム刊　2020年）内で使用しているファイルの配布用リポジトリです。
+# [Kubernetes on AWS～애플리케이션 엔지니어 서비스 환경 준비] 소스 코드 배포용 저장소
+[Kubernetes on AWS～애플리케이션 엔지니어 서비스 환경 준비] (ric telecom　2020년)에서 사용하고 있는 파일 배포용 저장소입니다.
 
-## db-docker-composeフォルダについて
+## db-docker-compose 폴더에 대하여
 
-db-docker-composeフォルダには、開発端末上でアプリケーションのテストを行うために使う
-docker-compose用設定ファイルとDBユーザ、データベースの作成用スクリプトを配置しています。
+db-docker-compose 폴더는, 개발 환경에서 애플리케이션을 테스트하기 위해 사용
+docker-compose용 설정 파일과 DB 사용자, 데이터베이스 생성용 스크립트를 저장하고 있습니다.
 
-これらは書籍上は使用しませんが、開発端末でアプリケーションを動作させてみる場合にご利用ください。
+위의 내용은 이 책에서 사용하지 않지만 개발 환경에서 애플리케이션을 동작 시킬 때 사용해 주십시요.
 
-使用方法は以下のとおりです。db-docker-comopseフォルダに移動して実行してください。
+사용 방법은 아래와 같습니다. db-docker-comopse 폴더에 복사하여 실행해 주십시요.
 
-### DB起動
+### DB 기동
 
 ```
 $ docker-compose up -d
 ```
 
-### DB停止
+### DB 정지
 
 ```
 $ docker-compose down
 ```
 
-### DBユーザ作成
+### DB 사용자 생성
 
 ```
 $ ./createuser.sh
 ```
 
-### DB作成
+### DB 생성
 
 ```
 $ ./createdb.sh

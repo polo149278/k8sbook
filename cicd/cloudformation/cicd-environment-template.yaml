@@ -1,41 +1,41 @@
 Parameters:
 
-  # 実行対象のリージョン
+  # 실행 대상 리전
   Region:
     Type: String
     Default: "ap-northeast-1"
     Description: Which region do you want to exeute pipeline.
 
-  # パイプラインの成果物を保管するS3バケット名
+  # 파이프 라인 성과물을 저장하는 S3 버킷명
   CodePipelineArtifactStoreBucketName:
     Type: String
     Default: pipeline-manifest
     Description: Bucket name of code pipeline's artifact.
 
-  # デプロイ対象のEKSクラスター名
+  # 디플로이 대상 EKS 클러스터명
   EKSClusterName:
     Type: String
     Default: eks-work-cluster
     Description: Target EKS Cluster name.
   
-  # kubectlのバージョン
+  # kubectl 버전
   KubectlVersion:
     Type: String
     Default: "1.14.0"
     Description: The version of the kubectl command used in the code build task.
 
-  # CICD体験用に使うCode Commitリポジトリ
+  # CICD 테스트로 사용할 Code Commit 저장소
   CodeCommitRepositoryNameForSampleAP:
     Type: String
     Default: "eks-work-cicd-repo"
     Description: Code commit repo name used in this pipeline's source.
-  # トリガー対象のブランチ名
+  # 트리거 대상 브랜치명
   Branch:
     Type: String
     Description: CodeCommit branch name to execte pipeline.
     Default: master
 
-  # CICD体験用に使うECRレジストリ
+  # CICD 테스트로 사용할 ECR 레지스트리
   ECRNameForSampleAP:
     Type: String
     Default: "k8sbook/backend-app"

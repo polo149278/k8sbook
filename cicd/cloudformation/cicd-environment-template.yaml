@@ -3,7 +3,7 @@ Parameters:
   # 실행 대상 리전
   Region:
     Type: String
-    Default: "ap-northeast-1"
+    Default: "ap-northeast-2"
     Description: Which region do you want to exeute pipeline.
 
   # 파이프 라인 성과물을 저장하는 S3 버킷명

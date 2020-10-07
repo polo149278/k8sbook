@@ -33,8 +33,8 @@ public class LocationServiceTest {
     @Tag("DBRequired")
     public void testRegisterLocations() {
         var locationList = List.of(
-                new Location("地点5", new Region(1, "地域1", LocalDateTime.now()), "地点5の詳細です。"),
-                new Location("地点6", new Region(1, "地域1", LocalDateTime.now()), "地点6の詳細です。")
+                new Location("地点5", new Region(1, "지역1", LocalDateTime.now()), "地点5の詳細です。"),
+                new Location("地点6", new Region(1, "지역1", LocalDateTime.now()), "地点6の詳細です。")
         );
         service.registerLocations(locationList);
 
@@ -49,10 +49,10 @@ public class LocationServiceTest {
                 deleteAllFrom("region"),
                 insertInto("region")
                         .columns("region_id", "region_name", "creation_timestamp")
-                        .values(1, "地域1", LocalDateTime.now())
-                        .values(2, "地域2", LocalDateTime.now())
-                        .values(3, "地域3", LocalDateTime.now())
-                        .values(4, "地域4", LocalDateTime.now())
+                        .values(1, "지역1", LocalDateTime.now())
+                        .values(2, "지역2", LocalDateTime.now())
+                        .values(3, "지역3", LocalDateTime.now())
+                        .values(4, "지역4", LocalDateTime.now())
                         .build(),
                 insertInto("location")
                         .columns("location_id", "location_name", "region_id", "note")

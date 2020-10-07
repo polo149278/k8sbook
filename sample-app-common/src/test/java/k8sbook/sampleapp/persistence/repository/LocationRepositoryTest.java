@@ -31,7 +31,7 @@ public class LocationRepositoryTest {
     @Test
     @Tag(("DBRequired"))
     public void testFindByRegion() {
-        var region = regionRepository.findByRegionName("地域1").get();
+        var region = regionRepository.findByRegionName("지역1").get();
         var result = locationRepository.findByRegion(region);
         assertThat(result).hasSize(4);
     }
@@ -43,10 +43,10 @@ public class LocationRepositoryTest {
                 deleteAllFrom("region"),
                 insertInto("region")
                         .columns("region_id", "region_name", "creation_timestamp")
-                        .values(1, "地域1", LocalDateTime.now())
-                        .values(2, "地域2", LocalDateTime.now())
-                        .values(3, "地域3", LocalDateTime.now())
-                        .values(4, "地域4", LocalDateTime.now())
+                        .values(1, "지역1", LocalDateTime.now())
+                        .values(2, "지역2", LocalDateTime.now())
+                        .values(3, "지역3", LocalDateTime.now())
+                        .values(4, "지역4", LocalDateTime.now())
                         .build(),
                 insertInto("location")
                         .columns("location_id", "location_name", "region_id", "note")

@@ -223,7 +223,7 @@ public class BatchApplicationTest2 {
                 deleteAllFrom("region"),
                 insertInto("region")
                         .columns("region_id", "region_name", "creation_timestamp")
-                        .values(1, "地域1", LocalDateTime.now())
+                        .values(1, "지역1", LocalDateTime.now())
                         .build()
         );
         var dbSetup = new DbSetup(new DataSourceDestination(dataSource), operations);

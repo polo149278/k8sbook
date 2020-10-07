@@ -33,8 +33,8 @@ public class LocationServiceTest {
     @Tag("DBRequired")
     public void testRegisterLocations() {
         var locationList = List.of(
-                new Location("地点5", new Region(1, "지역1", LocalDateTime.now()), "地点5の詳細です。"),
-                new Location("地点6", new Region(1, "지역1", LocalDateTime.now()), "地点6の詳細です。")
+                new Location("지점5", new Region(1, "지역1", LocalDateTime.now()), "지점5의 상세입니다."),
+                new Location("지점6", new Region(1, "지역1", LocalDateTime.now()), "지점6의 상세입니다.")
         );
         service.registerLocations(locationList);
 
@@ -56,10 +56,10 @@ public class LocationServiceTest {
                         .build(),
                 insertInto("location")
                         .columns("location_id", "location_name", "region_id", "note")
-                        .values(1, "地点1", 1, "地点1の詳細です。")
-                        .values(2, "地点2", 1, "地点2の詳細です。")
-                        .values(3, "地点3", 1, "地点3の詳細です。")
-                        .values(4, "地点4", 1, "地点4の詳細です。")
+                        .values(1, "지점1", 1, "지점1의 상세입니다.")
+                        .values(2, "지점2", 1, "지점2의 상세입니다.")
+                        .values(3, "지점3", 1, "지점3의 상세입니다.")
+                        .values(4, "지점4", 1, "지점4의 상세입니다.")
                         .build()
         );
         var dbSetup = new DbSetup(new DataSourceDestination(dataSource), operations);

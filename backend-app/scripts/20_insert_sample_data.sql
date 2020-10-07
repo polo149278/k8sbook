@@ -32,7 +32,7 @@ VALUES ('추라우미 수족관', (SELECT region_id FROM region WHERE region_nam
   '오키나와의 대표적인 수족관으로 고래 상어를 비롯하여 다양한 오키나와의 바다 생물을 볼 수 있다.');
 
 INSERT INTO location (location_name, region_id, note)
-VALUES ('슈리성', (SELECT region_id FROM region WHERE region_name = '오키마와'),
+VALUES ('슈리성', (SELECT region_id FROM region WHERE region_name = '오키나와'),
   '류큐 왕조의 왕성으로 세계유산 중 하나이다.');
 
 -- BATCH_PROCESSING

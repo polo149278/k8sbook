@@ -17,7 +17,7 @@
         <div class="body-2 location-text">{{location.note}}</div>
       </div>
       <div>
-        <nuxt-link to="/">トップページに戻る</nuxt-link>
+        <nuxt-link to="/">메인 페이지로 이동</nuxt-link>
       </div>
     </v-flex>
   </v-layout>

@@ -1,7 +1,7 @@
 FROM amazoncorretto:11
-LABEL maintainer="kazusato"
+LABEL maintainer="parksanguk"
 
-RUN yum install -y glibc-langpack-ja
+RUN yum install -y glibc-langpack-ko
 ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 RUN ln -sf /usr/share/zoneinfo/Asia/Seoul /etc/localtime

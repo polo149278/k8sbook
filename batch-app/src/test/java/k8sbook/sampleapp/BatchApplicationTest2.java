@@ -52,7 +52,7 @@ public class BatchApplicationTest2 {
     private AmazonS3 amazonS3;
 
     /**
-     * 배치 애플리케이션 초가화 시에는 처리(BatchApplication#run)이 동작하지 않게 된다.
+     * 배치 애플리케이션 초화 시에는 처리(BatchApplication#run)이 동작하지 않게 된다.
      */
     @BeforeAll
     public static void prepareBatchNotToRun() {

@@ -52,7 +52,7 @@ public class BatchApplicationTest2 {
     private AmazonS3 amazonS3;
 
     /**
-     * バッチアプリケーションの初期化時には、処理（BatchApplication#run）が動かないようにする。
+     * 배치 애플리케이션 초가화 시에는 처리(BatchApplication#run)이 동작하지 않게 된다.
      */
     @BeforeAll
     public static void prepareBatchNotToRun() {
@@ -128,7 +128,7 @@ public class BatchApplicationTest2 {
     }
 
     /**
-     * テスト時にはバッチアプリケーションの処理（BatchApplication#run）が動くようにする。
+     * 테스트 시에는 배치 애플리케이션 처리(BatchApplication#run)가 동작하게 된다.
      */
     @BeforeEach
     public void prepareBatchToRun() {

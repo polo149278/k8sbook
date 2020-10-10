@@ -12,7 +12,7 @@ INSERT INTO region (region_name, creation_timestamp)
 VALUES ('추부', current_timestamp);
 
 INSERT INTO region (region_name, creation_timestamp)
-VALUES ('긴키', current_timestamp);
+VALUES ('킨키', current_timestamp);
 
 INSERT INTO region (region_name, creation_timestamp)
 VALUES ('추고쿠', current_timestamp);

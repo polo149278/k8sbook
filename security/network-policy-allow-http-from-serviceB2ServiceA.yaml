@@ -11,7 +11,7 @@ spec:
   policyTypes:
   - Ingress
   ingress:
-  #수신 룰을 
+  #수신 룰을 지정
   - from:
     - podSelector:
         matchLabels:
